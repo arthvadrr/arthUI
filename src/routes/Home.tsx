@@ -6,7 +6,7 @@ export default function Home() {
         <div className="site">
             <HomeNav />
             <div className="page">
-
+                hi
             </div>
         </div>
     )

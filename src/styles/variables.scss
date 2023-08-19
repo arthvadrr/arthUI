@@ -1,1 +1,14 @@
-$blue: #3333aa;
+// Colors
+$color_background: #111111;
+$color_nav-background: #303030;
+
+// Sizes
+$nav_width: 300px;
+$page_width-desktop: 1200px;
+$page_width-mobile: 100vw;
+
+// Calcs
+$root_gradient-stop-desktop: calc(
+    (100vw - $page_width-desktop) / 2
+    + $nav_width
+);
