@@ -1,10 +1,7 @@
 @use 'variables' as *;
 
 nav {
-    display: grid;
-    justify-content: flex-end;
-    background-color: $color_nav-background;
-    width: calc(100vw - $nav_width - $page_width);
-    min-width: $nav_width;
+    width: $nav_width;
     flex-shrink: 0;
+    background-color: $color_nav-background;
 }

@@ -3,7 +3,7 @@ import "../styles/Home.scss";
 
 export default function Home() {
     return (
-        <div className="site">
+        <div className="site home">
             <HomeNav />
             <div className="page">
                 hi

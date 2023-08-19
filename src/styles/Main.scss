@@ -7,6 +7,19 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -9999;
+    background-image: linear-gradient(
+      to right,
+      $color_nav-background 50%,
+      $color_background 50%
+    );
+  }
 }
 
 body {
@@ -15,11 +28,12 @@ body {
 
 .site {
   display: flex;
+  justify-content: center;
   height: 100vh;
 
   .page {
-    width: 100%;
-    background: green;
+    width: 1200px;
+    background: $color_background;
   }
 }
 
