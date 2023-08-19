@@ -7,24 +7,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
-  &::before {
-    content: "";
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(
-      to right,
-      $color_nav-background $root_gradient-stop-desktop, 
-      $color_background $root_gradient-stop-desktop
-    );
-    z-index: -9999;
-  }
-
-  #root {
-    display: grid;
-    justify-content: center;
-  }
 }
 
 body {
@@ -33,13 +15,11 @@ body {
 
 .site {
   display: flex;
-  justify-content: center;
-  width: $page_width-desktop;
-  height: 50vh;
+  height: 100vh;
 
   .page {
-    width: $page_width-desktop;
-    background: red;
+    width: 100%;
+    background: green;
   }
 }
 
