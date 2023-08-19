@@ -4,7 +4,7 @@ nav {
     display: grid;
     justify-content: flex-end;
     background-color: $color_nav-background;
-    width: 25vw;
+    width: calc(100vw - $nav_width - $page_width);
     min-width: $nav_width;
     flex-shrink: 0;
 }
