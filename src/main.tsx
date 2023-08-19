@@ -1,11 +1,24 @@
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
 import ReactDOM from 'react-dom/client'
-import Home from './pages/Home'
+import { createBrowserRouter,RouterProvider} from 'react-router-dom'
+import Home from './routes/Home'
+import NotFound from './routes/NotFound'
 import './styles/main.scss'
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />,
+    errorElement: <NotFound />
+  },
+  {
+    path: 'notfound/',
+    element: <NotFound />,
+  }
+])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Home />
-  </React.StrictMode>,
+    <RouterProvider router={router} />
+  </React.StrictMode>
 )
