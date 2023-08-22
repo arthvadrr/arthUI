@@ -8,7 +8,7 @@ export default function Home() {
             <Nav />
             <div className="page">
                 <model-viewer id="moon"
-                    src="src/assets/moon.glb"
+                    src="src/assets/computer.glb"
                     camera-controls
                     disable-zoom
                 />
