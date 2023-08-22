@@ -3,9 +3,11 @@ import '../styles/NotFound.scss';
 
 export default function NotFound() {
     return (
-        <div>
+        <div className="site">
             <Nav />
-            Not found
+            <div className="page">
+                <h1>arthUI</h1>
+            </div>
         </div>
     )
 }

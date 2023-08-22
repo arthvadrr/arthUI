@@ -1,9 +1,11 @@
 @use 'variables' as *;
 
 :root {
-  background-color: $color_background;
+  font-family: ComicNeue;
+  color: $color_font-light;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+  background-color: $color_background;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -20,6 +22,10 @@
       $color_background 50%
     );
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Yomogi;
 }
 
 body {

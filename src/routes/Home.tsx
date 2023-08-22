@@ -1,12 +1,17 @@
-import HomeNav from "../components/Nav";
-import "../styles/Home.scss";
+//import { Link } from 'react-router-dom';
+import Nav from '../components/Nav';
+import '../styles/Home.scss';
 
 export default function Home() {
     return (
         <div className="site home">
-            <HomeNav />
+            <Nav />
             <div className="page">
-                hi
+                <model-viewer id="moon"
+                    src="src/assets/moon.glb"
+                    camera-controls
+                    disable-zoom
+                />
             </div>
         </div>
     )
